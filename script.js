@@ -49,7 +49,19 @@ const customCards.document.getElementById('customCards')
 
 for (let index = 0; index < customProfile.length; index++) {
     const customProfile = customProfile[index];
-    customCards.innerHTML +=
-
+    customCards.innerHTML += `
+    <div class="col-4 mb-4">
+        <div class="profile">
+            <img class="profile-pic img-fluid mb-2" src="./style/img/{$element.img}" alt="profile pic">
+            <div class="col-6 text-center profile-infos">
+                <h1 class="profile-name mb-1">
+                    {$element.name}
+                </h1>
+                <p class="profile-position mb-3">
+                    {$element.position}
+                </p>
+            </div>
+        </div>
+    </div>`;
 }
 
