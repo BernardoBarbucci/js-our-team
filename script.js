@@ -17,51 +17,51 @@ const teamProfiles = [
         name: 'Wayne Barnett',
         position: 'Founder & CEO',
         img: 'wayne-barnett-founder-ceo.jpg',
-    }
+    },
     {
         name: 'Angela Caroll',
         position: 'Chief Editor',
         img: 'angela-caroll-chief-editor.jpg',
-    }
+    },
     {
         name: 'Walter Gordon',
         position: 'Office Manager',
         img: 'walter-gordon-office-manager.jpg',
-    }
+    },
     {
         name: 'Angela Lopez',
         position: 'Social Media Manager',
         img: 'angela-lopez-social-media-manager.jpg',
-    }
+    },
     {
         name: 'Scott Estrada',
         position: 'Developer',
         img: 'scott-estrada-developer.jpg',
-    }
+    },
     {
         name: 'Barbara Ramos',
         position: 'Graphic Designer',
         img: 'barbara-ramos-graphic-designer.jpg',
-    }
+    },
 ];
 
-const customCards.document.getElementById('customCards')
+const customCards = document.getElementById('customCards');
 
-for (let index = 0; index < customProfile.length; index++) {
-    const customProfile = customProfile[index];
+for (let index = 0; index < teamProfiles.length; index++) {
+    const profile = teamProfiles[index];
     customCards.innerHTML += `
     <div class="col-4 mb-4">
         <div class="profile">
-            <img class="profile-pic img-fluid mb-2" src="./style/img/{$element.img}" alt="profile pic">
+            <img class="profile-pic img-fluid mb-2" src="./style/img/${profile.img}" alt="profile pic">
             <div class="col-6 text-center profile-infos">
                 <h1 class="profile-name mb-1">
-                    {$element.name}
+                    ${profile.name}
                 </h1>
                 <p class="profile-position mb-3">
-                    {$element.position}
+                    ${profile.position}
                 </p>
             </div>
         </div>
     </div>`;
-}
+};
 
