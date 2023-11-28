@@ -16,7 +16,7 @@
         <header class="pt-4 mb-3">
             <section class="container">
                 <div class="row text-center text-white">
-                    <h1 class="fs-4 mb-3 fw-light">OUR TEAM</h1>
+                    <h1 class="fs-4 mb-3 fw-normal">OUR TEAM</h1>
                     <p class="fs-6 fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ullam deserunt voluptas, commodi soluta modi et reprehenderit possimus adipisci maiores?</p>
                 </div>
             </section>
@@ -25,8 +25,18 @@
         <section class="custom_objects">
             <div class="container">
                 <div class="text-center row" id="customCards">
-                    <div>
-                        
+                    <div class="col-4 mb-4">
+                        <div class="profile">
+                            <img class="profile-pic img-fluid mb-2" src="./style/img/{$element.img}" alt="profile pic">
+                        <div class="col-6 text-center profile-infos">
+                            <h1 class="profile-name mb-1">
+                                {$element.name}
+                            </h1>
+                            <p class="">
+                                {$element.position}
+                            </p>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
