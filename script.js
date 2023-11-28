@@ -51,9 +51,9 @@ for (let index = 0; index < teamProfiles.length; index++) {
     const profile = teamProfiles[index];
     customCards.innerHTML += `
     <div class="col-4 mb-4">
-        <div class="profile">
+        <div class="profile text-center">
             <img class="profile-pic img-fluid mb-2" src="./style/img/${profile.img}" alt="profile pic">
-            <div class="col-6 text-center profile-infos">
+            <div class="col-12 text-center profile-infos">
                 <h1 class="profile-name mb-1">
                     ${profile.name}
                 </h1>
