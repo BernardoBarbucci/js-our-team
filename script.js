@@ -12,7 +12,7 @@
 // Organizzare i singoli membri in card/schede, potete usare come esempio lo screenshot,  ma anche realizzare qualcosa di creativo!!!
 
 // .1 array con i membri del team
-const teamNames = [
+const teamProfiles = [
     {
         name: 'Wayne Barnett',
         position: 'Founder & CEO',
@@ -44,3 +44,12 @@ const teamNames = [
         img: 'barbara-ramos-graphic-designer.jpg',
     }
 ];
+
+const customCards.document.getElementById('customCards')
+
+for (let index = 0; index < customProfile.length; index++) {
+    const customProfile = customProfile[index];
+    customCards.innerHTML +=
+
+}
+
