@@ -7,6 +7,6 @@
 .custom_container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(180deg, black, white);
+    background: linear-gradient(135deg, black, green);
     padding: 10px;
 }
